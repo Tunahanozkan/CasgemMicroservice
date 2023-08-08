@@ -33,9 +33,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Order", "Order", "{29DD6758
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PhotoStock", "PhotoStock", "{BA755056-1D8C-4931-9489-F555A1690383}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasgemMicroservice.Services.Catalog", "Services\Catalog\CasgemMicroservice.Services.Catalog\CasgemMicroservice.Services.Catalog.csproj", "{88CEE539-89E2-48A4-B1A6-390D86C068CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasgemMicroservice.Services.Catalog", "Services\Catalog\CasgemMicroservice.Services.Catalog\CasgemMicroservice.Services.Catalog.csproj", "{88CEE539-89E2-48A4-B1A6-390D86C068CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasgemMicroservice.Shared", "Shared\CasgemMicroservice.Shared\CasgemMicroservice.Shared.csproj", "{EA72E41A-E992-422C-BBDE-E86930D261D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasgemMicroservice.Shared", "Shared\CasgemMicroservice.Shared\CasgemMicroservice.Shared.csproj", "{EA72E41A-E992-422C-BBDE-E86930D261D9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasgemMicroService.IdentityServer", "IdentityServer\CasgemMicroService.IdentityServer\CasgemMicroService.IdentityServer.csproj", "{C92F1EBF-5DB3-4290-92FD-8EA3B7C04D8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{EA72E41A-E992-422C-BBDE-E86930D261D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA72E41A-E992-422C-BBDE-E86930D261D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA72E41A-E992-422C-BBDE-E86930D261D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C92F1EBF-5DB3-4290-92FD-8EA3B7C04D8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C92F1EBF-5DB3-4290-92FD-8EA3B7C04D8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C92F1EBF-5DB3-4290-92FD-8EA3B7C04D8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C92F1EBF-5DB3-4290-92FD-8EA3B7C04D8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,6 +71,7 @@ Global
 		{BA755056-1D8C-4931-9489-F555A1690383} = {B4C5E642-0185-4660-BC85-0A0D564D3C2A}
 		{88CEE539-89E2-48A4-B1A6-390D86C068CB} = {5EF9F627-7967-4FCF-AEC6-0B84419D92AE}
 		{EA72E41A-E992-422C-BBDE-E86930D261D9} = {4433CE27-43B5-408A-8B5E-E757A6253790}
+		{C92F1EBF-5DB3-4290-92FD-8EA3B7C04D8E} = {69EC939D-2123-4B80-9632-E943B96D1546}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {18753393-82A0-4DCC-A578-8FA2166FEAC4}
