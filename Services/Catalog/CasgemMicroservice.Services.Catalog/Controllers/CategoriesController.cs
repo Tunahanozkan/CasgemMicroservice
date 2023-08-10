@@ -1,6 +1,7 @@
 ﻿using CasgemMicroservice.Services.Catalog.Dtos.CategoryDtos;
 using CasgemMicroservice.Services.Catalog.Models;
 using CasgemMicroservice.Services.Catalog.Services.CategoryServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Metadata;
 using Microsoft.AspNetCore.Mvc;
@@ -8,6 +9,7 @@ using ZstdSharp.Unsafe;
 
 namespace CasgemMicroservice.Services.Catalog.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class CategoriesController : ControllerBase
@@ -18,7 +20,6 @@ namespace CasgemMicroservice.Services.Catalog.Controllers
         {
             _categoryService = categoryService;
         }
-
         [HttpGet]
         public async Task<IActionResult> GetCategoryList()
         {
