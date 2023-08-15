@@ -59,7 +59,7 @@ namespace CasgemMicroservice.Services.Order.Infrastructure.Persistance.Migration
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderDetailID"), 1L, 1);
 
-                    b.Property<int>("OrderID")
+                    b.Property<int>("OrderingID")
                         .HasColumnType("int");
 
                     b.Property<int>("ProductAmount")
@@ -78,7 +78,7 @@ namespace CasgemMicroservice.Services.Order.Infrastructure.Persistance.Migration
 
                     b.HasKey("OrderDetailID");
 
-                    b.HasIndex("OrderID");
+                    b.HasIndex("OrderingID");
 
                     b.ToTable("OrderDetails");
                 });
@@ -108,13 +108,13 @@ namespace CasgemMicroservice.Services.Order.Infrastructure.Persistance.Migration
 
             modelBuilder.Entity("CasgemMicroservice.Services.Order.Core.Domain.Entities.OrderDetail", b =>
                 {
-                    b.HasOne("CasgemMicroservice.Services.Order.Core.Domain.Entities.Ordering", "Order")
+                    b.HasOne("CasgemMicroservice.Services.Order.Core.Domain.Entities.Ordering", "Ordering")
                         .WithMany("OrderDetails")
-                        .HasForeignKey("OrderID")
+                        .HasForeignKey("OrderingID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Order");
+                    b.Navigation("Ordering");
                 });
 
             modelBuilder.Entity("CasgemMicroservice.Services.Order.Core.Domain.Entities.Ordering", b =>
